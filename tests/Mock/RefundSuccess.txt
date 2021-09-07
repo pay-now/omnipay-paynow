@@ -1,0 +1,5 @@
+HTTP/1.1 201 Created
+Date: Fri, 03 Sep 2021 10:24:17 GMT
+Content-Type: application/json
+
+{"refundId":"REF-123-PAY-NOW","status":"SUCCESSFUL"}

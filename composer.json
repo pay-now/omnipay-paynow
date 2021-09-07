@@ -1,0 +1,39 @@
+{
+    "name": "paynow/omnipay-paynow",
+    "description": "Paynow gateway for Omnipay payment processing library",
+    "keywords": [
+        "paynow",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "payment processing"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mElements S.A.",
+            "email": "kontakt@paynow.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "omnipay/common": "^3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Paynow\\": "src"
+        }
+    },
+    "scripts": {
+        "test" : "./vendor/bin/phpunit",
+        "check-style": "./vendor/bin/phpcs -p --exclude=Generic.Files.LineLength --standard=PSR2 src/",
+        "fix-style": "./vendor/bin/phpcbf -p --standard=PSR4 src/"
+    }
+}

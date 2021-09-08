@@ -1,5 +1,5 @@
 {
-    "name": "paynow/omnipay-paynow",
+    "name": "pay-now/omnipay-paynow",
     "description": "Paynow gateway for Omnipay payment processing library",
     "keywords": [
         "paynow",

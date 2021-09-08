@@ -7,10 +7,10 @@ processing library for PHP. This package implements paynow support for Omnipay.
 
 ## Installation
 
-Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply require `league/omnipay` and `paynow/omnipay-paynow` with Composer:
+Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply require `league/omnipay` and `pay-now/omnipay-paynow` with Composer:
 
 ```
-composer require league/omnipay paynow/omnipay-paynow
+composer require league/omnipay pay-now/omnipay-paynow
 ```
 
 

@@ -34,7 +34,6 @@ class FetchPaymentMethodsRequest extends AbstractPaynowRequest
      */
     protected function createResponse($data)
     {
-        var_dump($this->response);
         return $this->response = new FetchPaymentMethodsResponse($this, $data);
     }
 

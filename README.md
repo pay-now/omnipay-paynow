@@ -1,5 +1,9 @@
 # Omnipay: Paynow
 
+[![Build Status](https://travis-ci.com/pay-now/omnipay-paynow.svg?branch=master)](https://travis-ci.com/pay-now/omnipay-paynow)
+[![Latest Version](https://img.shields.io/github/release/pay-now/omnipay-paynow.svg?style=flat-square)](https://github.com/pay-now/omnipay-paynow/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
 **Paynow driver for the Omnipay PHP payment processing library**
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment

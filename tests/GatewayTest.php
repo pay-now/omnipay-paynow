@@ -95,4 +95,24 @@ public function testFetchPaymentsMethods()
     $this->assertInstanceOf('Omnipay\Paynow\Message\FetchPaymentMethodsResponse', $response);
 }
 
+public function testFetchTransaction()
+{
+	// given
+	$this->setMockHttpResponse('FetchTransactionSuccess.txt');
+	
+	// when
+	$request = $this->gateway->fetchTransaction([ 'transactionReference' => 'NOKZ-NVI-36D-9FQ' ]);
+	
+	// then
+	$this->assertInstanceOf('Omnipay\Paynow\Message\FetchTransactionRequest', $request);
+	
+	// when
+	$response = $request->send();
+	
+	// then
+	$this->assertInstanceOf('Omnipay\Paynow\Message\FetchTransactionResponse', $response);
+	$this->assertSame('NOKZ-NVI-36D-9FQ', $response->getPaymentId());
+	$this->assertSame('CONFIRMED', $response->getStatus());
+}
+
 }

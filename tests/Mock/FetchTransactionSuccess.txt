@@ -1,0 +1,5 @@
+HTTP/1.1 201 Created
+Date: Fri, 16 Sep 2021 10:51:13 GMT
+Content-Type: application/json
+
+{"paymentId": "NOKZ-NVI-36D-9FQ","status": "CONFIRMED"}

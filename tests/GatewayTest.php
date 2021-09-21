@@ -111,7 +111,7 @@ public function testFetchTransaction()
 	
 	// then
 	$this->assertInstanceOf('Omnipay\Paynow\Message\FetchTransactionResponse', $response);
-	$this->assertSame('NOKZ-NVI-36D-9FQ', $response->getPaymentId());
+	$this->assertSame('NOKZ-NVI-36D-9FQ', $response->getTransactionReference());
 	$this->assertSame('CONFIRMED', $response->getStatus());
 }
 

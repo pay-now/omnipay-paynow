@@ -10,7 +10,7 @@ class FetchTransactionResponse extends AbstractPaynowResponse
     /**
      * @return null|string
      */
-    public function getPaymentId()
+    public function getTransactionReference()
     {
         if ($paymentId = $this->get('paymentId')) {
             return $paymentId;

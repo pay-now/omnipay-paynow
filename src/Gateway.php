@@ -5,6 +5,8 @@ namespace Omnipay\Paynow;
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\Paynow\Message\FetchPaymentMethodsRequest;
+use Omnipay\Paynow\Message\FetchTransactionRequest;
+use Omnipay\Paynow\Message\FetchTransactionResponse;
 use Omnipay\Paynow\Message\Notification;
 use Omnipay\Paynow\Message\PurchaseRequest;
 use Omnipay\Paynow\Message\RefundRequest;
@@ -94,4 +96,15 @@ class Gateway extends AbstractGateway
     {
         return new Notification($this->httpRequest, $this->httpClient, $this->getSignatureKey());
     }
+    
+    /**
+     * @param array $parameters
+     *
+     * @return AbstractRequest|FetchTransactionResponse
+     */
+    public function fetchTransaction(array $parameters = [])
+    {
+        return $this->createRequest(FetchTransactionRequest::class, $parameters);
+    }
+    
 }

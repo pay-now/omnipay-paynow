@@ -85,7 +85,8 @@ abstract class AbstractPaynowRequest extends AbstractRequest
     public function sendData($data)
     {
         if ($this->getHttpMethod() == 'GET') {
-            $url = $this->getEndpoint() . '?' . http_build_query($data);
+            $httpQuery = $data ? ('?' . http_build_query($data)) : null;
+            $url = $this->getEndpoint() . $httpQuery;
             $body = null;
         } else {
             $body = json_encode($data);

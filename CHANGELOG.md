@@ -22,3 +22,7 @@ _**Added**_
 ## [1.0.2] - 2021-10-25
 _**Fixed**_
 - production endpoint url
+
+## [1.0.3] - 2021-10-25
+_**Fixed**_
+- sandbox endpoint url

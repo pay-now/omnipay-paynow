@@ -19,7 +19,7 @@ abstract class AbstractPaynowRequest extends AbstractRequest
     /**
      * @var string
      */
-    protected $productionEndpoint = 'https://api.sandbox.paynow.pl/';
+    protected $productionEndpoint = 'https://api.paynow.pl/';
 
     /**
      * @var string

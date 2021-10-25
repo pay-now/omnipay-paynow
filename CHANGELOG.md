@@ -18,3 +18,7 @@ _**Fixed**_
 
 _**Added**_
 - `fetchTransaction` method support
+
+## [1.0.2] - 2021-10-25
+_**Fixed**_
+- production endpoint url

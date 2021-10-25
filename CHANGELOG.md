@@ -25,4 +25,4 @@ _**Fixed**_
 
 ## [1.0.3] - 2021-10-25
 _**Fixed**_
-- production endpoint url
+- sandbox endpoint url

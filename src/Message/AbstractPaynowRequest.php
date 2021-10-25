@@ -14,7 +14,7 @@ abstract class AbstractPaynowRequest extends AbstractRequest
     /**
      * @var string
      */
-    protected $sandboxEndpoint = 'https://api.sanddbox.paynow.pl/';
+    protected $sandboxEndpoint = 'https://api.sandbox.paynow.pl/';
 
     /**
      * @var string
